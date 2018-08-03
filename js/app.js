@@ -22,5 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 
+  const animalList = document.querySelector('#animal-list');
+
+  const button = document.querySelector('#btn');
+  button.addEventListener("click", () => {
+    while (animalList.firstChild) {
+      animalList.removeChild(animalList.firstChild);
+    }
+  });
+
 
 })
